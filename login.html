@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Game Freaks</title>
+<link rel="stylesheet" href="css/style2.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/logotab.png">
+</head>
+<body id="lg">
+  <div class="login-page">
+    <div class="form">
+       <form class="register-form">
+         <p class="message1">Register</p>
+         <input type="text" placeholder="user-name">
+         <input type="text" placeholder="password">
+         <input type="text" placeholder="email ID">
+         <input type="tel" placeholder="contact no">
+         <input type="number" placeholder="age">
+         <button>Create</button>
+         <p class="message">Already Registered? <a href="#">Log in</a></p>
+       </form>
+       <form class="login-form">
+         <p class="message1">Login</p>
+         <input type="text" placeholder="user-name">
+         <input type="password" placeholder="password">
+         <button>Login</button>
+         <p class="message">Not yet Registered? <a href="#">Register</a></p>
+       </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+  </script>
+  <script>
+    $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+  </script>
+</body>
+</html>

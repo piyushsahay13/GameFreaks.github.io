@@ -1,0 +1,833 @@
+#page,div,ul,ol,li,h3
+{
+	margin:0;
+	padding:0;
+}
+#page
+{
+	font-family: "Aerial bold";
+	background: #000;
+	color: #ffffff;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.slide,
+.slide:after
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+	content: '';
+    background: transparent url(../images/pattern.png) repeat;
+}
+.slide li span
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: images 36s linear infinite 0s;
+}
+.slide li:nth-child(1) span {
+    background-image: url(../images/1.jpg)
+}
+.slide li:nth-child(2) span
+{
+    background-image: url(../images/2.jpg);
+    animation-delay: 6s;
+}
+.slide li:nth-child(3) span
+{
+    background-image: url(../images/3.jpg);
+    animation-delay: 12s;
+}
+.slide li:nth-child(4) span
+{
+    background-image: url(../images/gta5.jpg);
+    animation-delay: 18s;
+}
+.slide li:nth-child(5) span
+{
+    background-image: url(../images/5.jpg);
+    animation-delay: 24s;
+}
+.slide li:nth-child(6) span
+{
+    background-image: url(../images/8.jpg);
+    animation-delay: 30s;
+}
+.slide li:nth-child(2) div
+{
+    animation-delay: 6s;
+}
+.slide li:nth-child(3) div
+{
+    animation-delay: 12s;
+}
+.slide li:nth-child(4) div
+{
+    animation-delay: 18s;
+}
+.slide li:nth-child(5) div
+{
+    animation-delay: 24s;
+}
+.slide li:nth-child(6) div
+{
+    animation-delay: 30s;
+}
+@keyframes images {
+    0% { opacity: 0;
+    animation-timing-function: linear; }
+    10% { opacity: 1;
+         animation-timing-function: linear; }
+    19% { opacity: 1 }
+    27% { opacity: 0 }
+    100% { opacity: 0 }
+}
+.container1
+{
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+    width: 960px;
+	height:552px
+}
+.container1 > img
+{
+	border: 0;
+    position: relative;
+    float: left;
+    top: 70px;
+}
+.tagline
+{
+	position: relative;
+    top: 220px;
+    right: 518px;
+    line-height: 35px;
+	letter-spacing: 1px;
+}
+.my_button
+{
+    position: absolute;
+    top: 321px;
+    right: 663px;
+}
+.social1
+{
+    position: relative;
+    left: 0px;
+    bottom: 36px;
+    margin: 0px auto;
+    width: 960px;
+    height: 86px;
+}
+.social1 > a
+{
+	text-decoration:none;
+}
+.social1 > a > img
+{
+	margin-left:20px
+}
+*
+{
+	margin:0px auto;
+	padding:0px;
+}
+body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: justify;
+    margin-top: 30px;
+	color: white;
+	width:960px;
+	margin: 0px auto;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.container
+{
+	margin: 0px auto;
+	width:960px;
+	text-align:center;
+}
+header
+{
+    position: fixed;
+	width:100%;
+	height:85px;
+	background-color: rgba(0,0,0,1);
+}
+.navigation nav > ul
+{
+	float:right;
+	list-style-type:none;
+	display:inline;
+	margin-top:40px;
+}
+.navigation nav > ul > li
+{
+    float: left;
+    margin-left: 41px;
+    font-size: 25px;
+    position: relative;
+    bottom: 15px;
+    font-family: Arial;
+}
+.navigation a
+{
+	text-decoration:none;
+	color: #fff;
+	transition: color 1s ease-in-out;
+}
+.navigation a:hover
+{
+	color: #ff5a5a;
+	border-bottom:0px;
+
+}
+.banner
+{
+    position: relative;
+    right: 207px;
+	top:84px;
+    z-index: -1;
+}
+.logo
+{
+	position: relative;
+    bottom: 542px;
+	z-index: -1;
+}
+.main_c hr
+{
+	position: relative;
+    bottom: 570px;
+    width: 490px;
+	z-index: -1;
+}
+.game1
+{
+	position: relative;
+    bottom: 71px;
+    height: 886px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game1 >h1
+{
+    position: relative;
+    bottom: 491px;
+    right: 223px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game1 > p
+{
+    position: relative;
+    bottom: 468px;
+    right: 354px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g1
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b1
+{
+    position: relative;
+    bottom: 426px;
+    right: 407px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width: 140px;
+
+}
+.b1:hover
+{
+	content: url(../images/more_h.png);
+
+}
+.game2
+{
+	position: relative;
+    bottom: 152px;
+    height: 652px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game2 >h1
+{
+    position: relative;
+    bottom: 525px;
+    left: 374px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game2 > p
+{
+    position: relative;
+    bottom: 513px;
+    left: 353px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g2
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b2
+{
+    position: relative;
+    bottom: 472px;
+    left: 421px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width: 140px;
+}
+.b2:hover
+{
+	content: url(../images/more_h.png);
+
+}
+.game3
+{
+	position: relative;
+    bottom: 71px;
+    height: 886px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game3 >h1
+{
+    position: relative;
+    bottom: 491px;
+    right: 261px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game3 > p
+{
+    position: relative;
+    bottom: 468px;
+    right: 354px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g3
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b3
+{
+    position: relative;
+    bottom: 420px;
+    right: 409px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width: 140px;
+
+}
+.b3:hover
+{
+	content: url(../images/more_h.png);
+
+}
+.game4
+{
+	position: relative;
+    bottom: 152px;
+    height: 652px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game4 >h1
+{
+    position: relative;
+    bottom: 491px;
+    left: 386px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game4 > p
+{
+    position: relative;
+    bottom: 478px;
+    left: 414px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g4
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b4
+{
+    position: relative;
+    bottom: 450px;
+    left: 412px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width: 140px;
+}
+.b4:hover
+{
+	content: url(../images/more_h.png);
+
+}
+.game5
+{
+	position: relative;
+    bottom: 71px;
+    height: 886px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game5 >h1
+{
+    position: relative;
+    bottom: 491px;
+    right: 326px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game5 > p
+{
+    position: relative;
+    bottom: 474px;
+    right: 335px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g5
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b5
+{
+    position: relative;
+    bottom: 437px;
+    right: 409px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width: 140px;
+}
+.b5:hover
+{
+	content: url(../images/more_h.png);
+
+}
+.game6
+{
+	position: relative;
+    bottom: 152px;
+    height: 652px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game6 >h1
+{
+    position: relative;
+    bottom: 491px;
+    left: 334px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game6 > p
+{
+    position: relative;
+    bottom: 478px;
+    left: 340px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g6
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b6
+{
+    position: relative;
+    bottom: 446px;
+    left: 412px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width:140px;
+}
+.b6:hover
+{
+	content: url(../images/more_h.png);
+
+}
+.game7
+{
+	position: relative;
+    bottom: 71px;
+    height: 886px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game7 >h1
+{
+    position: relative;
+    bottom: 491px;
+    right: 167px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game7 > p
+{
+    position: relative;
+    bottom: 474px;
+    right: 335px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g7
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b7
+{
+    position: relative;
+    bottom: 437px;
+    right: 409px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width: 140px;
+
+}
+.b7:hover
+{
+	content: url(../images/more_h.png);
+
+}
+.game8
+{
+	position: relative;
+    bottom: 152px;
+    height: 652px;
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+	z-index: 0;
+}
+.game8 >h1
+{
+    position: relative;
+    bottom: 491px;
+    left: 231px;
+    z-index: 0;
+    font-family: Arial;
+    font-size: 64px;
+    color: #fff;
+}
+.game8 > p
+{
+    position: relative;
+    bottom: 478px;
+    left: 340px;
+    color: #fff;
+    font-size: 23px;
+	z-index: 0;
+}
+.g8
+{
+    position: relative;
+    top: 0px;
+    right: 207px;
+    z-index: 0;
+}
+.b8
+{
+    position: relative;
+    bottom: 446px;
+    left: 412px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 0;
+    cursor: pointer;
+	width: 140px;
+}
+.b8:hover
+{
+	content: url(../images/more_h.png);
+
+}
+#foot
+{
+    height: 86px;
+    background-color: #363636;
+}
+#foot > div > p
+{
+    float: left;
+    color: #fff;
+    position: relative;
+    top: 38px;
+    font-size: 18px;
+}
+#foot > li
+{
+	list-style-type:none;
+}
+.social
+{
+    position: relative;
+    left: 233px;
+    top: 22px;
+    margin: 0px auto;
+    width: 960px;
+}
+.social > a
+{
+	text-decoration:none;
+}
+.social > a > img
+{
+	margin-left:20px
+}
+.fb:hover
+{
+	content: url(../images/fb_logo.png);
+}
+.tw:hover
+{
+	content: url(../images/tw_logo.png);
+}
+.insta:hover
+{
+	content: url(../images/insta_logo.png);
+}
+.linkin:hover
+{
+	content:url(../images/li_logo.png);
+}
+.n1
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.n2
+{
+    text-align: left;
+    margin-bottom: 20px;
+}.n3
+{
+    text-align: left;
+    margin-bottom: 20px;
+}.n4
+{
+    text-align: left;
+    margin-bottom: 20px;
+}.n5
+{
+    text-align: left;
+    margin-bottom: 20px;
+}.n6
+{
+    text-align: left;
+    margin-bottom: 20px;
+}.n7
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.n8
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+#lg{
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/lgbg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+.login-page{
+  width:360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+.form{
+  position: relative;
+  z-index: 1;
+  background: #800000;
+  max-width: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+.form  input{
+  font-family: "Roboto", sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button
+{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.form button:hover,.form button:active{
+  background: #43A047;
+}
+.form .message{
+  margin: 15px 0 0;
+  color: aliceblue;
+  font-size: 12px;
+}
+.form .message{
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form a{
+  text-decoration: none;
+  color:aliceblue;
+}
+.form .message1{
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+	padding: 10px
+}
+.form .register-form{
+  display:none;
+}
